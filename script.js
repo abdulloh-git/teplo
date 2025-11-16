@@ -1,8 +1,3 @@
-do {
-    let personality = prompt("Enter the code!");
-} while (personality !== "nothingPersonal");
-
-
 class Typing {
     constructor(text) {
         this.text = document.querySelector(text);

@@ -2,8 +2,22 @@
     .container2 {
         transform: translateX(50px);
     }
+
     .aboutUs {
         padding: 30px 0;
+    }
+
+    .contacts {
+        padding: 30px 0;
+    }
+
+    .contacts__title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .container3 {
+        gap: 30px;
     }
 }
 
@@ -11,7 +25,8 @@
     .container2 {
         transform: translateX(35%);
         flex-direction: column-reverse;
-    }   
+    }
+
     .aboutUs__p {
         font-size: 14px;
         max-width: 600px;
@@ -24,6 +39,26 @@
     .header__nav-list_item-link {
         font-size: 18px;
     }
+
+    .captain {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .captain__number {
+        text-align: center;
+    }
+
+    .otherMembers {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .header__nav {
+        flex-direction: column;
+        gap: 30px;
+    }
+
 }
 
 @media screen and (max-width:667px) {
@@ -32,9 +67,42 @@
         padding: 0 15px;
         transform: translateX(-35%);
     }
+
     .aboutUs {
         padding: 30px 0;
     }
+
+    .captain {
+        transform: translateX(10px);
+    }
+
+    .captain__number {
+        font-size: 20px;
+    }
+
+    .captain__name {
+        font-size: 20px;
+    }
+
+    .otherMembers__name {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .otherMembers__number {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .footer__title {
+        font-style: 20px;
+    }
+
+    .footer__button-button {
+        max-width: 150px;
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width:576px) {
@@ -45,12 +113,51 @@
     .header__nav-list_item:nth-child(2) {
         margin: 0 20px;
     }
-    .header__nav {
-        flex-direction: column;
-        gap: 30px;
-    }
+
     .aboutUs {
         padding: 20px 0;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .aboutUs__img {
+        transform: translateX(-10%);
+    }
+
+    .captain__number {
+        font-size: 18px;
+    }
+
+    .captain__name {
+        font-size: 18px;
+    }
+
+    .otherMembers__name {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .otherMembers__number {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .captain {
+        gap: 20px;
+    }
+
+    .captain__name {
+        text-align: center;
+    }
+
+    .otherMembers {
+        gap: 20px;
+    }
+
+    .otherMembers__name {
+        text-align: center;
     }
 }
 
@@ -59,9 +166,11 @@
         flex-direction: column;
         gap: 20px;
     }
-    .aboutUs__img {
-        transform: translateX(-17%);
+
+    .header__nav-logo {
+        flex-direction: column;
     }
+
     .aboutUs {
         padding: 15px 0;
     }

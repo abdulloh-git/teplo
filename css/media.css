@@ -27,7 +27,7 @@
         flex-direction: column-reverse;
     }
 
-    .aboutUs__p {
+    .aboutUs__p p{
         font-size: 14px;
         max-width: 600px;
         text-align: center;
@@ -38,6 +38,14 @@
 @media screen and (max-width:768px) {
     .header__nav-list_item-link {
         font-size: 18px;
+    }
+
+    .captain::after {
+        min-width: 425px;
+    }
+
+    .otherMembers::after {
+        min-width: 350px;
     }
 
     .captain {
@@ -59,14 +67,20 @@
         gap: 30px;
     }
 
+    .footer__title {
+        font-size: 20px;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:667px) {
     .aboutUs__p {
         max-width: 100%;
         padding: 0 15px;
-        transform: translateX(-35%);
+        transform: translateX(-50px);
     }
+
+
 
     .aboutUs {
         padding: 30px 0;
@@ -167,6 +181,15 @@
         gap: 20px;
     }
 
+    .footer__review {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .aboutUs__img {
+        transform: translateX(-20%);
+    }
+
     .header__nav-logo {
         flex-direction: column;
     }
@@ -179,5 +202,41 @@
 @media screen and (max-width:360px) {
     .aboutUs__img {
         transform: translateX(-20%);
+    }
+}
+
+@media (hover:hover) {
+    .underline:hover {
+        background: blueviolet
+    }
+
+    .underline:hover::after {
+        opacity: 1;
+    }
+
+    .captain:hover::after {
+        opacity: 1;
+    }
+
+    .otherMembers:hover::after {
+        opacity: 1;
+    }
+}
+
+@media (hover: none) {
+        .underline:hover {
+        background: blueviolet
+    }
+
+    .underline:hover::after {
+        opacity: 0;
+    }
+
+    .captain:hover::after {
+        opacity: 0;
+    }
+
+    .otherMembers:hover::after {
+        opacity: 0;
     }
 }
